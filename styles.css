@@ -145,8 +145,9 @@
 /* Splash/Home Section */
 
 .splash {
-    background: black;
+    
     padding: 400px 0;
+    background: #000;
     filter: drop-shadow(0px 5px 10px #000);
 }
 
@@ -159,6 +160,7 @@
     margin: 0 auto;
     height: 90%;
     padding: 0 30px;
+    filter: brightness(100%);
 }
 
 .splash_title {
@@ -238,6 +240,13 @@
 .about_content p {
     font-size: 1rem;
     color: rgb(0, 160, 172);
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.about_content p::first-letter {
+    font-size: 130%;
 }
 
 .about_image {
@@ -246,8 +255,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 500px;
+    height: 375px;
+    width: 375px;
     background: rgb(126, 237, 255);
     background: radial-gradient(circle, rgba(126, 237, 255, 1) 0%, rgba(0, 154, 190, 1) 70%, rgba(1, 138, 219, 1) 100%);
     border-radius: 10px;
@@ -260,7 +269,7 @@
 }
 
 .fa-laugh-beam {
-    font-size: 20rem;
+    font-size: 15rem;
     color: rgb(226, 226, 226);
     transition: all 1s;
 }
@@ -322,7 +331,7 @@
     background: #000;
     transition: 0.3s ease-in;
     border-radius: 4px;
-    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    filter: brightness(100%) drop-shadow(0px 0px 10px rgb(0, 0, 0));
 }
 
 .project_img_preview {
@@ -375,8 +384,9 @@
     border-radius: 0 0 4px 4px;
 }
 
-.projects_container:hover .project_item:not(:hover) {
-    filter: brightness(0.2);
+.projects_container:hover .project_item:not(:hover) {    
+    filter: brightness(0.2) drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    transition: 0.3s ease-in;
 }
 
 .modal_button {
@@ -593,8 +603,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 500px;
+    height: 375px;
+    width: 375px;
     background: rgb(126, 237, 255);
     background: radial-gradient(circle, rgba(126, 237, 255, 1) 0%, rgba(0, 154, 190, 1) 70%, rgba(1, 138, 219, 1) 100%);
     border-radius: 10px;
@@ -607,7 +617,7 @@
 }
 
 .fa-comment-alt {
-    font-size: 20rem;
+    font-size: 15rem;
     color: rgb(226, 226, 226);
     transition: all 0.5s;
 }
