@@ -6,12 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brent Pabsdorf</title>
+    <meta name="description" content="Brent Pabsdorf porftolio website, providing about content, contact information, and projects. Entry level software developer and web developer.">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a676d5a793.js" crossorigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FEMX3PBFPT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FEMX3PBFPT');
+    </script>
 </head>
 
 <body>
@@ -43,7 +52,7 @@
     </nav>
 
     <!-- Home Section -->
-    <div class="splash" id="home">        
+    <div class="splash">        
         <div class="splash_container">
             <p class="splash_description">ENTYRY LEVEL</p>
             <h1 class="splash_title">SOFTWARE DEVELOPER</h1>
@@ -51,7 +60,7 @@
     </div>
 
     <!-- About Section -->
-    <div class="about_wrapper" id="about">
+    <div class="about_wrapper">
         <div class="about_container">
             <div class="about_content">
                 <h1>ABOUT</h1>
@@ -72,41 +81,41 @@
     </div>
 
     <!-- Projects Section -->
-    <div class="projects_wrapper" id="projects">
+    <div class="projects_wrapper">
         <h1>PROJECTS</h1>
         <div class="projects_container">
-            <button class="modal_button" id="item1_button">
+            <button class="modal_button" onclick="modalClick(0)">
                 <div class="project_item" id="item1">
                     <img class="project_img_preview" src="assets/preview_images/website_img.jpg">
                     <div class="project_label "><span>Portfolio Website</span></div>
                 </div>
             </button>
 
-            <button class="modal_button" id="item2_button">
+            <button class="modal_button" onclick="modalClick(1)">
                 <div class="project_item" id="item2">
                     <img class="project_img_preview" src="assets/preview_images/shutdowntimer_img.jpg">
                     <div class="project_label "><span>Shutdown Timer</span></div>
                 </div>
             </button>
-            <button class="modal_button" id="item3_button">
+            <button class="modal_button" onclick="modalClick(2)">
                 <div class="project_item" id="item3">
                     <img class="project_img_preview" src="assets/preview_images/datecountdown_img.jpg">
                     <div class="project_label "><span>Date Coutdown</span></div>
                 </div>
             </button>
-            <button class="modal_button" id="item4_button">
+            <button class="modal_button" onclick="modalClick(3)">
                 <div class="project_item" id="item4">
                     <img class="project_img_preview" src="assets/preview_images/platformgame_img.jpg">
                     <div class="project_label "><span>Unity Platformer</span></div>
                 </div>
             </button>
-            <button class="modal_button" id="item5_button">
+            <button class="modal_button" onclick="modalClick(4)">
                 <div class="project_item" id="item5">
                     <img class="project_img_preview" src="assets/preview_images/steamsales_img.jpg">
                     <div class="project_label "><span>Steam Sales</span></div>
                 </div>
             </button>
-            <button class="modal_button" id="item6_button">
+            <button class="modal_button" onclick="modalClick(5)">
                 <div class="project_item" id="item6">
                     <img class="project_img_preview" src="assets/preview_images/numberguess_img.jpg">
                     <div class="project_label "><span>Number Guess</span></div>
@@ -118,7 +127,7 @@
         <div id="project1_modal" class="modal">
             <!-- Modal content -->
             <div class="modal-header">
-                <span class="close" id="close1">&times;</span>
+                <span class="close" onclick="closeModal(0)">&times;</span>
                 <h2>Portfolio Website</h2>
             </div>
             <div class="modal-content">
@@ -143,7 +152,7 @@
         <div id="project2_modal" class="modal">
             <!-- Modal content -->
             <div class="modal-header">
-                <span class="close" id="close2">&times;</span>
+                <span class="close" onclick="closeModal(1)">&times;</span>
                 <h2>Shutdown Timer</h2>
             </div>
             <div class="modal-content">
@@ -170,7 +179,7 @@
         <div id="project3_modal" class="modal">
             <!-- Modal content -->
             <div class="modal-header">
-                <span class="close" id="close3">&times;</span>
+                <span class="close" onclick="closeModal(2)">&times;</span>
                 <h2>Date Coutdown</h2>
             </div>
             <div class="modal-content">
@@ -197,7 +206,7 @@
         <div id="project4_modal" class="modal">
             <!-- Modal content -->
             <div class="modal-header">
-                <span class="close" id="close4">&times;</span>
+                <span class="close" onclick="closeModal(3)">&times;</span>
                 <h2>Unity Platformer</h2>
             </div>
             <div class="modal-content">
@@ -223,7 +232,7 @@
         <div id="project5_modal" class="modal">
             <!-- Modal content -->
             <div class="modal-header">
-                <span class="close" id="close5">&times;</span>
+                <span class="close" onclick="closeModal(4)">&times;</span>
                 <h2>Steam Sales</h2>
             </div>
             <div class="modal-content">
@@ -249,7 +258,7 @@
         <div id="project6_modal" class="modal">
             <!-- Modal content -->
             <div class="modal-header">
-                <span class="close" id="close6">&times;</span>
+                <span class="close" onclick="closeModal(5)">&times;</span>
                 <h2>Number Guess</h2>
             </div>
             <div class="modal-content">
@@ -286,7 +295,7 @@
                     GitHub: <a href="https://github.com/BPabsy" class="social_icon--link" target="_blank"><i
                             class="fab fa-github"></i></a>
                     <br><br><br>
-                    LinkedIn: <a href="https://www.linkedin.com/in/brent-pabsdorf-907a67206/" class="social_icon--link"
+                    LinkedIn: <a href="https://linkedin.com/in/brent-pabsdorf" class="social_icon--link"
                         target="_blank"><i class="fab fa-linkedin"></i></a>
                 </p>
             </div>
@@ -302,7 +311,7 @@
             <div class="social_media ">
                 <a href="https://github.com/BPabsy" class="social_icon--link" target="_blank"><i
                         class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/brent-pabsdorf-907a67206/" class="social_icon--link"
+                <a href="https://linkedin.com/in/brent-pabsdorf" class="social_icon--link"
                     target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>

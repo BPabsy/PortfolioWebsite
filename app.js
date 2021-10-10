@@ -64,120 +64,22 @@ navLogo.addEventListener('click', hideMobileMenu);
 
 
 // Project Modal
+var modal_btn = document.getElementsByClassName("modal_button");
+var modal_el = document.getElementsByClassName("modal");
+var close_btn = document.getElementsByClassName("close");
 
-// Get the <span> element that closes the modal
-var span1 = document.getElementById("close1");
-var span2 = document.getElementById("close2");
-var span3 = document.getElementById("close3");
-var span4 = document.getElementById("close4");
-var span5 = document.getElementById("close5");
-var span6 = document.getElementById("close6");
-
-//Project 1 Modal
-var project1_modal = document.getElementById("project1_modal");
-var project1_modal_btn = document.getElementById("item1_button");
-
-// When the user clicks the button, open the modal 
-project1_modal_btn.onclick = function() {    
-    project1_modal.style.display = "block";
+function modalClick(x) {
+    modal_el[x].style.display = "block";
 }
 
-//Project 2 Modal
-var project2_modal = document.getElementById("project2_modal");
-var project2_modal_btn = document.getElementById("item2_button");
-
-// When the user clicks the button, open the modal 
-project2_modal_btn.onclick = function() {
-    project2_modal.style.display = "block";
+function closeModal(x) {
+    modal_el[x].style.display = "none";
 }
 
-//Project 3 Modal
-var project3_modal = document.getElementById("project3_modal");
-var project3_modal_btn = document.getElementById("item3_button");
-
-// When the user clicks the button, open the modal 
-project3_modal_btn.onclick = function() {
-    project3_modal.style.display = "block";
-}
-
-//Project 4 Modal
-var project4_modal = document.getElementById("project4_modal");
-var project4_modal_btn = document.getElementById("item4_button");
-
-// When the user clicks the button, open the modal 
-project4_modal_btn.onclick = function() {
-    project4_modal.style.display = "block";
-}
-
-//Project 5 Modal
-var project5_modal = document.getElementById("project5_modal");
-var project5_modal_btn = document.getElementById("item5_button");
-
-// When the user clicks the button, open the modal 
-project5_modal_btn.onclick = function() {
-    project5_modal.style.display = "block";
-}
-
-//Project 6 Modal
-var project6_modal = document.getElementById("project6_modal");
-var project6_modal_btn = document.getElementById("item6_button");
-
-// When the user clicks the button, open the modal 
-project6_modal_btn.onclick = function() {
-    project6_modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span1.onclick = function() {
-    if (project1_modal.style.display == "block") {
-        project1_modal.style.display = "none";
-    }
-}
-
-span2.onclick = function() {
-    if (project2_modal.style.display == "block") {
-        project2_modal.style.display = "none";
-    }
-}
-span3.onclick = function() {
-    if (project3_modal.style.display == "block") {
-        project3_modal.style.display = "none";
-    }
-}
-span4.onclick = function() {
-    if (project4_modal.style.display == "block") {
-        project4_modal.style.display = "none";
-    }
-}
-span5.onclick = function() {
-    if (project5_modal.style.display == "block") {
-        project5_modal.style.display = "none";
-    }
-}
-span6.onclick = function() {
-    if (project6_modal.style.display == "block") {
-        project6_modal.style.display = "none";
-    }
-}
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == project1_modal) {
-        project1_modal.style.display = "none";
-    }
-    if (event.target == project2_modal) {
-        project2_modal.style.display = "none";
-    }
-    if (event.target == project3_modal) {
-        project3_modal.style.display = "none";
-    }
-    if (event.target == project4_modal) {
-        project4_modal.style.display = "none";
-    }
-    if (event.target == project5_modal) {
-        project5_modal.style.display = "none";
-    }
-    if (event.target == project6_modal) {
-        project6_modal.style.display = "none";
+    for(i = 0; i < modal_el.length; i++){
+        if(event.target == modal_el[i]){
+            modal_el[i].style.display = "none";
+        }        
     }
 }
