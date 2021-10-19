@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREMIUM HEADPHONES</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a676d5a793.js" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- NAVBAR -->
+        <div class="navbar_container">
+            <div class="nav_top_container">
+                <a href="#" id="logo_link">PREMIUM HEADPHONES</a>
+                <div class="links_container">
+                    <a href="https://facebook.com" target="_blank" class="link_icon"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://youtube.com" target="_blank" class="link_icon"><i class="fab fa-youtube"></i></a>
+                    <button class="link_icon" id="icon_toggle_cart"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <ul class="nav_bottom_container" id="menu">
+                <li class="menu_item">
+                    <a href="#home" class="menu_link" id="home-page">Home</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#features" class="menu_link" id="features-page">Features</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#reviews" class="menu_link" id="reviews-page">Reviews</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#purchase" class="menu_link" id="purchase-page">Purchase</a>
+                </li>
+                <li class="menu_item">
+                    <p class="menu_link" id="menu_toggle_cart">Cart</p>
+                </li>
+            </ul>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>                
+            </div>
+            <span id="close_menu">X</span>
+        </div>
+    </nav>
+
+    <!-- CART SECTION -->
+    <div class="cart_container" id="cart">
+        <div class="cart_header">
+            <h2>My Cart</h2>
+            <h2 id="close_cart">X</h2>
+        </div>
+        <ul class="cart_items">
+            <!-- EMPTY CART -->
+        </ul>
+        <button id="checkout_btn">CHECKOUT</button>
+    </div>
+
+    <!-- HOME SECTION -->
+    <div class="wrapper">
+        <a class="anchor" id="home"></a>
+        <div class="home_section">
+            <h1 id="title_upper">PREMIUM</h1>
+            <h1 id="title_lower">HEADPHONES</h1>
+        </div>
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <div class="wrapper">
+        <a class="anchor" id="features"></a>
+        <div class="features_section">
+            <div class="features_container">
+                <div class="feature_item">
+                    <i class="fas fa-headphones-alt"></i>
+                    <h2>TITLE</h2>
+                    <p>Description of the first feature. This feature is described here. A block of text that will explain
+                        what this feature is.</p>
+                </div>
+
+                <div class="feature_item">
+                    <i class="fas fa-sliders-h"></i>
+                    <h2>TITLE</h2>
+                    <p>Description of the second feature. This feature is described here. A block of text that will explain
+                        what this feature is.</p>
+                </div>
+            </div>
+
+            <div class="feature_side_image">
+                <img id="feature_image" src="assets/features_image.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- REVIEWS SECTION -->
+    <div class="wrapper">
+        <a class="anchor" id="reviews"></a>
+        <div class="reviews_section">
+
+            <div class="reviews_side_image">
+                <img id="review_image" src="assets/reviews_image-min.jpg">
+            </div>
+
+            <div class="reviews_container">
+
+                <div class="review_item">
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="rating_name">John Smith</h3>
+                    <p class="rating_comment">"Best device I've owned."</p>
+                </div>
+
+
+                <div class="review_item">
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <h3 class="rating_name">Sarah Evans</h3>
+                    <p class="rating_comment">"I use this product everyday."</p>
+                </div>
+
+
+                <div class="review_item">
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <h3 class="rating_name">Steven Rogers</h3>
+                    <p class="rating_comment">"Highly recommend this product!"</p>
+                </div>
+
+
+                <div class="review_item">
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="rating_name">Mary Ann</h3>
+                    <p class="rating_comment">"Easy to use. Great quality."</p>
+                </div>
+
+
+                <div class="review_item">
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="rating_name">Jane Doe</h3>
+                    <p class="rating_comment">"Fantastic!"</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PURCHASE SECTION -->
+    <div class="wrapper">
+        <a class="anchor" id="purchase"></a>
+        <div class="purchase_section">
+
+            <div class="purchase_options">
+                <h1>PURCHASE</h1>
+                <h3>Select color and quantity</h3>
+
+                <div class="selections">
+
+                    <button class="color_block" id="black_block" value="grey"></button>
+                    <button class="color_block" id="white_block" value="white"></button>
+                    <button class="color_block" id="blue_block" value="blue"></button>
+                    <button class="color_block" id="red_block" value="red"></button>
+
+                    <select id="quantity_btn">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <h3 id="total_price">$99.99</h3>
+                <button id="cart_add_btn">Add To Cart</button>
+                <p>*Limit of three per customer. Shipping and taxes added at checkout.</p>
+            </div>
+
+            <div class="purchase_side_image">
+                <img id="purchase_image" class="purchase_image_grey" src="assets/purchase_image.png">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div class="footer">
+        <ul class="footer_links">
+
+            <li class="footer_item">
+                <a class="footer_link" href="#">Home</a>
+            </li>
+
+            <li class="footer_item">
+                <a class="footer_link" href="https://facebook.com" target="_blank">Facebook</a>
+            </li>
+
+            <li class="footer_item">
+                <a class="footer_link" href="https://youtube.com" target="_blank">Youtube</a>
+            </li>
+
+            <li class="footer_item" id="last_item">
+                <button class="footer_link" id="footer_toggle_cart">View Cart</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

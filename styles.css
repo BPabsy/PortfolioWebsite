@@ -249,6 +249,20 @@
     font-size: 130%;
 }
 
+#skills {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+#skills ul {
+    margin: 15px;
+}
+
+#skills h2 {
+    margin-bottom: 5px;
+}
+
 .about_image {
     margin: 20px;
     display: flex;
