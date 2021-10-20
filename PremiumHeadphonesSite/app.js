@@ -8,6 +8,7 @@ window.addEventListener('load', checkMenuDisplay);
 //TOGGLE MOBILE MENU
 $(".navbar_toggle, .menu_link, #close_menu").click(function() {
     if(window.innerWidth < 570){
+        $("#menu").css("visibility", "visible");
         $("#menu").slideToggle(500);
         $(".navbar_toggle").toggle();
         $("#close_menu").toggle();
@@ -18,6 +19,7 @@ $(".navbar_toggle, .menu_link, #close_menu").click(function() {
 function checkMenuDisplay() {
     if(window.innerWidth > 570){
         highlightMenu();
+        $("#menu").css("visibility", "visible");
         $("#menu").css("display", "flex");
         $(".navbar_toggle").css("display", "none");
         $("#close_menu").css("display", "none");        
