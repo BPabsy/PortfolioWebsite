@@ -85,7 +85,7 @@ $(".color_block").click(function() {
 })
 
 //UPDATE PRICE BASED ON PURCHASE QUANTITY
-$("#quantity_btn").click(function() {
+$("#quantity_btn").change(function() {
     $("#total_price").text("$" + Math.round((99.99 * this.value) * 100) / 100);
 })
 
